@@ -1,9 +1,10 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function getSeason(date) {let month = 0;
-  if ((typeof date !== 'object') || (typeof date ==='undefined')) { return 'Unable to determine the time of year!' }
+module.exports = function getSeason(date) {
+  let month = 0;
+  if ((typeof date !== 'object') || (typeof date === 'undefined')) { return 'Unable to determine the time of year!' }
   else {
-    month= date.getUTCMonth();
+    month = date.getUTCMonth();
     if (date.constructor.toString().indexOf('Date') > -1) {
       if (((month >= 0) && (month <= 1)) || (month === 11)) {
         return 'winter';
