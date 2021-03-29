@@ -4,7 +4,7 @@ module.exports = function repeater( str, options ) {
    
     resFrRep=firstRep(str,options);
 
-    console.log(resFrRep);
+    return resFrRep;
     
     
           }
